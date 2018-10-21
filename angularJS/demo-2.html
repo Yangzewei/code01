@@ -1,0 +1,21 @@
+<html>
+	<head>
+			<title>±Ì¥Ô Ω</title>
+			<script src="angular.min.js"></script>
+			<script>
+						var app = angular.module("myApp",[]);
+						app.controller("myCon",function($scope){
+									$scope.add=function(){
+												return parseInt($scope.x)+parseInt($scope.y);
+										
+										}
+								
+							});
+				</script>
+		</head>
+	 <body ng-app="myApp"  ng-controller="myCon">
+	 	 	x:<input ng-model="x">
+	 	 	y:<input ng-model="y">
+	 	 	{{add()}}
+	</body>
+</html>

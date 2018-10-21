@@ -1,0 +1,22 @@
+<html>
+	<head>
+			<title>ÊÂ¼þ</title>
+			<script src="angular.min.js"></script>
+			<script>
+						var app = angular.module("myApp",[]);
+						app.controller("myCon",function($scope){
+								$scope.add=function(){
+										$scope.z=parseInt($scope.x)+parseInt($scope.y);
+									
+									}
+								 
+							});
+				</script>
+		</head>
+	 <body ng-app="myApp"  ng-controller="myCon">
+	 	  	x:<input ng-model="x">
+	 	  	y:<input ng-model="y">
+	 	  	<button ng-click="add()">¼ÆËã</button>
+	 	  	{{z}}
+	</body>
+</html>

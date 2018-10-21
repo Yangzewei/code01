@@ -1,0 +1,20 @@
+<html>
+	<head>
+			<title>Ñ­»·</title>
+			<script src="angular.min.js"></script>
+			<script>
+						var app = angular.module("myApp",[]);
+						app.controller("myCon",function($scope){
+							 	$scope.list=[123,231,666,778,998];
+							});
+				</script>
+		</head>
+	 <body ng-app="myApp"  ng-controller="myCon">
+	 	  	 <table>
+	 	  	 		<tr ng-repeat="x in list">
+	 	  	 				<td>{{x}}</td>
+	 	  	 			
+	 	  	 			</tr>
+	 	  	</table>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+			<title>循环</title>
+			<script src="angular.min.js"></script>
+			<script>
+						var app = angular.module("myApp",[]);
+						app.controller("myCon",function($scope){
+							 	$scope.list=[
+							 			{name:'刘备',age:28,address:'蜀汉'},
+							 			{name:'曹操',age:26,address:'北魏'},
+							 			{name:'孙权',age:20,address:'东吴'},
+							 			{name:'赵云',age:23,address:'蜀汉'}
+							 	];
+							});
+				</script>
+		</head>
+	 <body ng-app="myApp"  ng-controller="myCon">
+	 	  	 <table border="1">
+	 	  	 		<tr >
+	 	  	 				<td> 姓名</td>
+	 	  	 			<td>年龄</td>
+	 	  	 			<td>国家</td>
+	 	  	 			</tr>
+	 	  	 				<tr ng-repeat="user in list">
+	 	  	 				<td>{{user.name}} </td>
+	 	  	 			<td> {{user.age}}</td>
+	 	  	 			<td>{{user.address}} </td>
+	 	  	 			</tr>
+	 	  	</table>
+	</body>
+</html>
